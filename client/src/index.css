@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@font-face {
+    font-family: 'Kaushan Script';
+    src: url('FirstProject/client/src/assets/fonts/KaushanScript-Regular.ttf') format('ttf');
+    font-weight: normal;
+    font-style: normal;
+}
