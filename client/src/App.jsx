@@ -4,21 +4,20 @@ import Login from './pages/login.jsx';
 import Home from './pages/home.jsx';
 import Contact from './pages/contact.jsx';
 import About from './pages/about.jsx';
+import NavLayout from './layout/navlayout.jsx';
 
 const App = () => {
   return (
-    <>
-        <div className="h-screen w-screen flex flex-col items-center justify-center">
       <BrowserRouter>
           <Routes>
-             <Route path = "/" element={<Home/>} />
-             <Route path="/login" element={<Login/>}/>
-             <Route path="/contact" element={<Contact/>}/>
-             <Route path="/about" element={<About/>}/>
+             <Route path = "/" element={<NavLayout/>}>
+              <Route index element={<Home/>}/>
+             <Route path="login" element={<Login/>}/>
+             <Route path="contact" element={<Contact/>}/>
+             <Route path="about" element={<About/>}/>
+             </Route>
           </Routes>
       </BrowserRouter>
-        </div>
-    </>
   )
 }
 export default App

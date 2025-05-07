@@ -2,7 +2,7 @@
 const Contact = () => {
     return(
         <>
-            <div className='h-screen w-screen bg-red-700 '></div>
+            <div className='h-full w-full bg-red-700 '></div>
         </>
     )
 }
